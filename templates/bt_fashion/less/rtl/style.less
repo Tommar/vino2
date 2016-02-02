@@ -1,0 +1,74 @@
+// RTL STYLES
+// ------------------------------------------------------
+
+// Article Images
+// --------------
+article img[align=left],
+.img_caption.left,
+.pull-left.item-image {
+  margin: 0 @gridGutterWidth @T3globalMargin 0;
+}
+
+article img[align=right],
+.img_caption.right,
+.pull-right.item-image {
+  margin: 0 0 @T3globalMargin @gridGutterWidth;
+}
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+html[dir="rtl"].off-canvas #off-canvas-nav{
+	left: 100%;
+}
+html[dir="rtl"]{
+	#btl{
+		float: left;
+		margin: 0 14px 0 117px;
+	}
+	.btl-label{
+		float: right!important;
+	}
+	.btl-input{
+		float: left!important;
+	}
+	.btl-content-block h3{
+		padding: 3px 19px 0 0 !important;
+	}
+	#simplemodal-container a.modalCloseImg{
+		left: 20px;
+		right: auto;
+	}
+	.defaultLayout .bt-productslider .bt-addtocart,
+	.defaultLayout .bt-productslider .bt-viewdetails{
+		background-position: 90% center;
+	}
+	.customer_service img{
+		float: right!important;
+	}
+	.module_menu .nav > li > a:hover,
+	.module_menu .nav > li.active > a{
+		background-position: 95% center;
+	}
+	.mod_easyblogtagcloud a.tag-cloud{
+		background-position: 92% center;
+	}
+	.mod_easyblogarchive .mod-months .mod-month{
+		padding: 3px 24px 3px 0;
+	}
+	#eblog-wrapper .float-l, #eblog-wrapper .alignleft, #eblog-wrapper .float-li li{
+		float: right;
+	}
+	#eblog-wrapper .blog-taglist span.tag-head{
+		float: right;
+		margin: 0 0 0 10px;
+	}
+	#ezblog-body .blog-related ul.entry-related-post li,#ezblog-body .author_link .author-post ul.entry-related-post li{
+		background-position: 98% center;
+	}
+	body #comment-form input.inputbox[type="checkbox"]{
+		margin: 0 0 0 5px;
+	}
+}

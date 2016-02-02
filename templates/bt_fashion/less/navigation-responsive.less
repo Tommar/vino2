@@ -1,0 +1,252 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+// ---------------------------------------------------------
+// RESPONSIVE NAVIFATION FOR MOBILE
+// ---------------------------------------------------------
+@media (max-width: @navbarCollapseWidth) {
+
+
+  // -------------------------------------------------------
+  // NAVIGATIONS ELEMENTS
+  // -------------------------------------------------------
+
+  // BREADCRUMBS
+  // -------------------------------------------------------
+ // .t3-navhelper {
+ //   margin-left: -20px;
+  //  margin-right: -20px;
+ // }
+
+
+
+  // -------------------------------------------------------
+  //  JA MAIN MENU
+  // -------------------------------------------------------
+
+  .t3-mainnav {
+    background: none;
+    border-top: 0;
+    height: auto;
+ //   margin-left: -20px;
+ //   margin-right: -20px;
+
+    // Toggle Button
+    //.navbar .btn-navbar {
+      //margin-bottom: (@T3globalMargin / 2);
+    //}
+
+    .navbar .btn-navbar:hover {
+      cursor: pointer;
+    }
+
+
+    // COLLAPSIBLE NAVBAR
+    // ----------------------------------------------------
+
+    // The nav
+    .nav-collapse {
+      margin-top: 0;
+      /*background: #fff;*/
+      //#gradient > .vertical(@navbarBackground, @navbarBackgroundHighlight);
+    }
+
+    .nav-collapse .nav {
+      margin: 0;
+    }
+
+    .nav-collapse .nav > li {
+    }
+
+    .nav-collapse .nav > li > a {
+      margin-bottom: 0;
+    }
+
+    .nav-collapse .nav > li > span {
+      padding: ((@navbarHeight - @T3globalPadding) / 2) @T3globalPadding;
+      display: inline-block;
+    }
+
+    // Nav and dropdown links in navbar
+    // -------------------------------
+    .nav-collapse .nav > li > a,
+    .nav-collapse .dropdown-menu a {      
+      padding: 0px @T3globalPadding;
+      font-weight: normal;	  
+      //color: @navbarLinkColor;
+      text-shadow: none;
+      .border-radius(0);
+    }
+
+    .nav-collapse .dropdown-menu li + li a {
+      margin-bottom: 0;
+    }
+
+    // Hover state
+    .nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus {
+      background:none;      
+      color: @linkColor;
+      .reset-filter();
+    }
+	.nav-collapse .navbar-nav > li > a{
+	   background:none;
+	   color:#fff;
+	   text-transform: uppercase;
+	   font-weight:bold;
+	   font-size:16px;
+	}
+
+
+    // dropdown links
+    // --------------
+    .nav-collapse .dropdown-menu a {     
+      border-bottom: 0;
+      font-weight: 300;
+	  font-size:14px;
+      padding: (@T3globalPadding / 2) @T3globalPadding;
+      .reset-filter();
+    }
+
+
+    // Hover state
+    .nav-collapse .dropdown-menu.open a,
+    .nav-collapse .dropdown-submenu.open > a,
+    .nav-collapse .dropdown-menu a:hover {
+      background: none;      
+      color: @linkColor;
+      .reset-filter();
+    }
+
+
+    // Dropdowns in the navbar
+    // -----------------------
+    .nav-collapse .dropdown-menu {
+      margin: 0;
+      padding: 0;
+      background:none;
+      border: none;
+      .border-radius(0);
+      .box-shadow(none);
+    }
+    
+    
+    // Full width when fixed
+    // ---------------------
+    &.navbar-collapse-fixed-top,
+    &.navbar-collapse-fixed-bottom {
+      margin: 0;
+
+      .nav-collapse {
+        margin: 0;
+      }
+    }
+    // End
+  }
+
+
+  // -------------------------------------------------------
+  //  JA MAIN MENU (Inverted)
+  // -------------------------------------------------------
+
+  .T3Navbar() when (@T3NavbarInverted = 1) {
+
+    // Begin: Mixin Styling
+    background: @grayDark;
+    background: @grayDark;
+
+    // Toggle Button
+    .navbar .btn-navbar {
+    }
+
+
+    // COLLAPSIBLE NAVBAR
+    // ----------------------------------------------------
+
+    // The nav
+    .nav-collapse {
+      background: @grayDarker;
+      color: @grayLighter;
+    }
+
+
+    // Nav and dropdown links in navbar
+    // -------------------------------
+    .nav-collapse .nav > li > a,
+    .nav-collapse .dropdown-menu a {
+      border-bottom:0;
+    }
+
+    // Hover state
+    .nav-collapse .nav > li > a:hover,
+    .nav-collapse .dropdown-menu a:hover {
+      background:none;
+	  color:@linkColor;
+    }
+
+
+    // dropdown links
+    // --------------
+    .nav-collapse .dropdown-menu a {     
+      border-bottom: 0;
+    }
+
+
+    // Hover state
+    .nav-collapse .dropdown-menu a:hover {
+      background:none;
+	  color:@linkColor;
+    }
+
+
+    // Dropdowns in the navbar
+    // -----------------------
+    .nav-collapse .dropdown-menu {
+    }
+
+  // End: Mixin Styling
+  }
+
+  .T3Navbar() when (@T3NavbarInverted = 0) {
+    // Leave blank here because we will use the default style.
+  }
+
+  // Calling the styles
+  .t3-mainnav {
+    .T3Navbar();
+  }
+
+
+
+  // ----------------------------------------------------
+  // MISC
+  // ----------------------------------------------------
+  .t3-mainnav .navbar .nav > li > .dropdown-menu {
+    // Hiding Menu and Divider in nav-collapse
+    &:before, &:after, .divider {
+      display: none;
+    }
+  }
+
+  .t3-mainnav .customization {
+    display: none;
+  }
+
+  // End Responsive
+}
+.off-canvas #off-canvas-nav .t3-mainnav .t3-megamenu{
+  padding-top:25px;
+}
+.nav-collapse .nav > li {
+  padding-left: 14px;
+}

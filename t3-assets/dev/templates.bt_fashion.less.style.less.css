@@ -1,0 +1,181 @@
+
+
+.logo {
+  float: left;
+}
+.logo .logo-image a {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+}
+.logo-image {
+  overflow: hidden;
+  height: 75px;
+  position: relative;
+  z-indent: 9;
+  margin-left: 100px;
+  overflow: hidden;
+  
+}
+.logo-image a {
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 75px;
+}
+.logo-image span,
+.logo-image small {
+  display: none;
+}
+.logo-text a {
+  color: #444;
+  text-decoration: none;
+  font-size: 17.5px;
+}
+.logo-text:hover a,
+.logo-text a:hover,
+.logo-text a:active,
+.logo-text a:focus {
+  text-decoration: none;
+}
+.logo-text .site-slogan {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.head-search {
+  float: right;
+  margin-top: 16px;
+}
+.head-search form {
+  margin: 0;
+  float: right;
+  position: relative;
+}
+.head-search label {
+  display: none;
+}
+.head-search .button {
+  position: absolute;
+  background: url("../../templates/bt_fashion/images/search.png") #fff no-repeat center center;
+  width: 17px;
+  height: 17px;
+  text-indent: 99px;
+  overflow: hidden;
+  box-shadow: none;
+  border: 0;
+  top: 8px;
+  right: 10px;
+}
+.head-search .input {
+  border: 0;
+  box-shadow: none;
+  border-radius: 20px;
+  color: #70747a;
+  font-weight: bold;
+  padding: 3px 12px;
+  border: 2px solid #fff;
+  width: 250px;
+  outline: none;
+}
+.head-search .input:focus {
+  box-shadow: none;
+}
+.t3-sl {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.t3-mainbody {
+  padding-bottom: 48px;
+  padding-top: 48px;
+  background: #fff;
+}
+.t3-footer {
+  color: #7f7f7f;
+  *zoom: 1;
+}
+.t3-footer .t3-footer-inner {
+  background: #1f2123;
+}
+.t3-footer:before,
+.t3-footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.t3-footer:after {
+  clear: both;
+}
+.t3-footer small {
+  display: block;
+  font-size: 100%;
+}
+.t3-footer a {
+  color: #999;
+}
+.t3-footer a:hover,
+.t3-footer a:active,
+.t3-footer a:focus {
+  color: #e6e6e6;
+}
+.t3-footnav {
+  padding: 40px 0;
+  margin: 0 117px;
+  border-bottom: 1px solid #363839;
+  *zoom: 1;
+}
+.t3-footnav:before,
+.t3-footnav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.t3-footnav:after {
+  clear: both;
+}
+.t3-footnav ul {
+  list-style: none;
+  margin-left: 0;
+}
+.t3-footnav li {
+  line-height: 24px;
+}
+.t3-footnav .module-title {
+  font-size: 18px;
+  color: #999;
+}
+.t3-copyright {
+  font-size: 12px;
+  padding: 25px 0;
+  *zoom: 1;
+}
+.t3-copyright:before,
+.t3-copyright:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.t3-copyright:after {
+  clear: both;
+}
+.copyright {
+  float: left;
+}
+.poweredby {
+  float: right;
+  text-align: right;
+}
+.poweredby .t3-logo,
+.poweredby .t3-logo-small {
+  
+  float: right;
+  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)" !important;
+  
+  filter: alpha(opacity=50);
+  
+  -moz-opacity: 0.5;
+  
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
